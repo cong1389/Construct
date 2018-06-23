@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSend" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="btnViewFengShui" xml:space="preserve">
+    <value>View Direction</value>
+  </data>
+  <data name="linktmp" xml:space="preserve">
+    <value>detail</value>
+  </data>
+  <data name="ltrAboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="ltrAddressName" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ltrAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ltrArchitectName" xml:space="preserve">
+    <value>Scale works</value>
+  </data>
+  <data name="ltrAssociateName" xml:space="preserve">
+    <value>Floor area</value>
+  </data>
+  <data name="ltrBacName" xml:space="preserve">
+    <value>Bac</value>
+  </data>
+  <data name="ltrCateNameTitle" xml:space="preserve">
+    <value>Send Us a Message</value>
+  </data>
+  <data name="ltrClientName" xml:space="preserve">
+    <value>Investors</value>
+  </data>
+  <data name="ltrCompletedName" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="ltrConstructionsDropTitle" xml:space="preserve">
+    <value>--- Select construction ---</value>
+  </data>
+  <data name="ltrContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ltrContactSocial" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="ltrContinus" xml:space="preserve">
+    <value>Continus</value>
+  </data>
+  <data name="ltrDetail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ltrDongBacName" xml:space="preserve">
+    <value>Dong Bac</value>
+  </data>
+  <data name="ltrDongName" xml:space="preserve">
+    <value>Dong</value>
+  </data>
+  <data name="ltrDongNamName" xml:space="preserve">
+    <value>Dong Nam</value>
+  </data>
+  <data name="ltrDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="ltrFBComment" xml:space="preserve">
+    <value>Customer comment</value>
+  </data>
+  <data name="ltrFunction" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="ltrHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="ltrHuongNhaName" xml:space="preserve">
+    <value>Huong nha</value>
+  </data>
+  <data name="ltrIntro" xml:space="preserve">
+    <value>Introdution</value>
+  </data>
+  <data name="ltrLastNews" xml:space="preserve">
+    <value>LATEST FROM BLOG</value>
+  </data>
+  <data name="ltrLastWork" xml:space="preserve">
+    <value>LATEST WORKS</value>
+  </data>
+  <data name="ltrLocationDropTitle" xml:space="preserve">
+    <value>-- Select location ---</value>
+  </data>
+  <data name="ltrLocationName" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ltrNamName" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="ltrNamSinhAmLichName" xml:space="preserve">
+    <value>Lunar Year of Birth</value>
+  </data>
+  <data name="ltrNamSinhDuongLichName" xml:space="preserve">
+    <value>Birth year solar calendar</value>
+  </data>
+  <data name="ltrNguHanhName" xml:space="preserve">
+    <value>Ngu hanh</value>
+  </data>
+  <data name="ltrOffice" xml:space="preserve">
+    <value>My office</value>
+  </data>
+  <data name="ltrOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ltrPage" xml:space="preserve">
+    <value>Category path</value>
+  </data>
+  <data name="ltrPartnerHeader" xml:space="preserve">
+    <value>OUR CLIENTS</value>
+  </data>
+  <data name="ltrPhoneName" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ltrPrice" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="ltrPricing" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="ltrProductRelate" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ltrQueMenhName" xml:space="preserve">
+    <value>Que menh</value>
+  </data>
+  <data name="ltrQuestion" xml:space="preserve">
+    <value>Do you have any questions, please contact</value>
+  </data>
+  <data name="ltrReciveEmail" xml:space="preserve">
+    <value>NEWSLETTER</value>
+  </data>
+  <data name="ltrRegistration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="ltrRequest" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="ltrRequireCus" xml:space="preserve">
+    <value>WE KNOW YOUR NEEDS ON WEBSITE</value>
+  </data>
+  <data name="ltrSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ltrService" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ltrServiceDropTitle" xml:space="preserve">
+    <value>--- Select service ---</value>
+  </data>
+  <data name="ltrSiteAreaName" xml:space="preserve">
+    <value>Site Area</value>
+  </data>
+  <data name="ltrSocail" xml:space="preserve">
+    <value>Social Network</value>
+  </data>
+  <data name="ltrTayBacName" xml:space="preserve">
+    <value>Tay Bac</value>
+  </data>
+  <data name="ltrTayName" xml:space="preserve">
+    <value>Tay</value>
+  </data>
+  <data name="ltrTayNamName" xml:space="preserve">
+    <value>Tay Nam</value>
+  </data>
+  <data name="ltrThemeOther" xml:space="preserve">
+    <value>Other themes</value>
+  </data>
+  <data name="ltrTimeCarried" xml:space="preserve">
+    <value>TimeCarried</value>
+  </data>
+  <data name="ltrUrbanName" xml:space="preserve">
+    <value>Construction area</value>
+  </data>
+  <data name="ltrVongBatQuai" xml:space="preserve">
+    <value>Vong bat quai</value>
+  </data>
+  <data name="ltrVongBatQuaiTitle" xml:space="preserve">
+    <value>Detail vong bat quai</value>
+  </data>
+  <data name="ltrWebsite" xml:space="preserve">
+    <value>View demo</value>
+  </data>
+  <data name="ltrWokingTimeName" xml:space="preserve">
+    <value>Woking time</value>
+  </data>
+  <data name="ltrWorkCarried" xml:space="preserve">
+    <value>Work Carried</value>
+  </data>
+  <data name="next_clause" xml:space="preserve">
+    <value>Next »</value>
+  </data>
+  <data name="next_to_page_clause" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="of_clause" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="page_clause" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="previous_clause" xml:space="preserve">
+    <value>« Pre</value>
+  </data>
+  <data name="show_result_clause" xml:space="preserve">
+    <value>Show items from</value>
+  </data>
+  <data name="txtArea" xml:space="preserve">
+    <value>Use area</value>
+  </data>
+  <data name="txtFullName" xml:space="preserve">
+    <value>FullName</value>
+  </data>
+  <data name="txtMessage" xml:space="preserve">
+    <value>Utilities of the facility</value>
+  </data>
+  <data name="txtPhone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="txtSubject" xml:space="preserve">
+    <value>Name of project or Subject</value>
+  </data>
+  <data name="ltrBirthdayOwer" xml:space="preserve">
+    <value>Brithday owner</value>
+  </data>
+  <data name="ltrDirectHouse" xml:space="preserve">
+    <value>Direction house</value>
+  </data>
+  <data name="ltrSex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="ltrSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ltrCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ltrSocial" xml:space="preserve">
+    <value>Social</value>
+  </data>
+  <data name="ltrWorking" xml:space="preserve">
+    <value>hot</value>
+  </data>
+</root>

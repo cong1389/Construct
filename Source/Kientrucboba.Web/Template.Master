@@ -1,0 +1,189 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.Master.cs" Inherits="Cb.Web.Template" %>
+
+<%@ Register TagPrefix="dgc" TagName="top_menu" Src="~/Controls/top_menu.ascx" %>
+<%@ Register TagPrefix="dgc" TagName="footer" Src="~/Controls/footer.ascx" %>
+
+<!doctype html>
+<html lang="en">
+<head id="Head1" runat="server">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%-- <script>
+        /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+        if (typeof WebFontConfig === "undefined") {
+            WebFontConfig = new Object();
+        }
+        WebFontConfig['google'] = { families: ['Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic', 'Montserrat:400,700&amp;subset=latin'] };
+
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+                        </script>--%>
+
+    <link rel="shortcut icon" href="/Images/favi.png" type="image/x-icon" />
+    <%--<script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "/assets/wp-includes\/js\/wp-emoji-release.min.js" } };
+        !function (a, b, c) { function d(a) { var c, d, e, f, g, h = b.createElement("canvas"), i = h.getContext && h.getContext("2d"), j = String.fromCharCode; if (!i || !i.fillText) return !1; switch (i.textBaseline = "top", i.font = "600 32px Arial", a) { case "flag": return i.fillText(j(55356, 56806, 55356, 56826), 0, 0), !(h.toDataURL().length < 3e3) && (i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), c = h.toDataURL(), i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 55356, 57096), 0, 0), d = h.toDataURL(), c !== d); case "diversity": return i.fillText(j(55356, 57221), 0, 0), e = i.getImageData(16, 16, 1, 1).data, f = e[0] + "," + e[1] + "," + e[2] + "," + e[3], i.fillText(j(55356, 57221, 55356, 57343), 0, 0), e = i.getImageData(16, 16, 1, 1).data, g = e[0] + "," + e[1] + "," + e[2] + "," + e[3], f !== g; case "simple": return i.fillText(j(55357, 56835), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0]; case "unicode8": return i.fillText(j(55356, 57135), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0]; case "unicode9": return i.fillText(j(55358, 56631), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0] } return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i; for (i = Array("simple", "flag", "unicode8", "diversity", "unicode9"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+		</script>--%>
+<%--    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7COswald%3A300%2C400%2C700%7CRoboto%3A100%2C300%2C400%2C500%2C700%2C900%2C100italic%2C300italic%2C400italic%2C500italic%2C700italic%2C900italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7COswald%3A300%2C400%2C700%7CRoboto%3A100%2C300%2C400%2C500%2C700%2C900%2C100italic%2C300italic%2C400italic%2C500italic%2C700italic%2C900italic">--%>
+    <%--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js'></script>--%>
+    <link rel='stylesheet' href='/assets/wp-content/plugins/js_composer/assets/lib/vc_carousel/css/vc_carousel.min.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' href='/assets/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' href='/assets/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/owl.carousel.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/js/prettyPhoto/prettyPhoto.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/animate.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/base.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/widgets.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/shortcodes.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/layout.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/assets/css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/towerpress/style.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' href='/assets/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+    <script type='text/javascript' src='/assets/wp-includes/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='/assets/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = { "ajax_url": "\/towerpress\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/towerpress\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View Cart", "cart_url": "http:\/\/themes.slicetheme.com\/towerpress\/?page_id=2195", "is_cart": "", "cart_redirect_after_add": "no" };
+        /* ]]> */
+</script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js'></script>
+    <!--[if lt IE 9]>
+<script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/html5.js'></script>
+<![endif]-->
+
+    <!--custom css-->
+    <link href="Styles/Style.css" rel="stylesheet" />
+
+    <!--jssor-->
+    <script src="/assets/wp-content/plugins/jssor/jssor.js"></script>
+    <script src="/assets/wp-content/plugins/jssor/jssor.slider.js"></script>
+
+     <link href="Styles/latostyle.css" rel="stylesheet" />
+     <link href="Styles/latolatinfonts.css" rel="stylesheet" />
+
+    <!--Fane page FB-->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</head>
+
+<body class="home page page-id-991 page-template-default layout-wide header-style-v1 header-transparent wpb-js-composer js-comp-ver-4.12 vc_responsive">
+    <form id="aspnetForm" runat="server">
+        <div id="st-wrapper">
+
+            <!-- header -->
+            <dgc:top_menu ID="top_menu" runat="server" />
+            <!-- end header -->
+
+            <!-- main-container -->
+            <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+            <!-- end main-container -->
+
+            <!-- footer -->
+            <dgc:footer ID="footer" runat="server" />
+            <!-- end footer -->
+
+        </div>
+
+    </form>
+    <div class="scrollTop"><a href="#"><i class="fa fa-angle-double-up"></i></a></div>
+
+    <link rel='stylesheet' href='/assets/wp-content/plugins/revslider/public/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' type='text/css' media='all' />
+    <script type="text/javascript">
+        function revslider_showDoubleJqueryError(sliderID) {
+            var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+            errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+            errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+            errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+            errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+            jQuery(sliderID).show().html(errorMessage);
+        }
+    </script>
+    <%--<link rel='stylesheet' id='vc_google_fonts_montserratregular700-css' href='http://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700' type='text/css' media='all' />--%>
+    <script type='text/javascript' src='/assets/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpcf7 = { "loaderUrl": "\/assets\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptcha": { "messages": { "empty": "Please verify that you are not a robot." } }, "sending": "Sending ..." };
+        /* ]]> */
+</script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+    <script type='text/javascript' src='/Scripts/script.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var woocommerce_params = { "ajax_url": "\/towerpress\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/towerpress\/?wc-ajax=%%endpoint%%" };
+        /* ]]> */
+</script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_cart_fragments_params = { "ajax_url": "\/towerpress\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/towerpress\/?wc-ajax=%%endpoint%%", "fragment_name": "wc_fragments" };
+        /* ]]> */
+</script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/jquery.fitvids.js'></script>
+    <script type='text/javascript' src='/assets/wp-includes/js/imagesloaded.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/jquery.owl.carousel.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/jquery.wow.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/jquery.parallax.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var mejsL10n = { "language": "en-US", "strings": { "Close": "Close", "Fullscreen": "Fullscreen", "Turn off Fullscreen": "Turn off Fullscreen", "Go Fullscreen": "Go Fullscreen", "Download File": "Download File", "Download Video": "Download Video", "Play": "Play", "Pause": "Pause", "Captions\/Subtitles": "Captions\/Subtitles", "None": "None", "Time Slider": "Time Slider", "Skip back %1 seconds": "Skip back %1 seconds", "Video Player": "Video Player", "Audio Player": "Audio Player", "Volume Slider": "Volume Slider", "Mute Toggle": "Mute Toggle", "Unmute": "Unmute", "Mute": "Mute", "Use Up\/Down Arrow keys to increase or decrease volume.": "Use Up\/Down Arrow keys to increase or decrease volume.", "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds." } };
+        var _wpmejsSettings = { "pluginPath": "\/towerpress\//assets/wp-includes\/js\/mediaelement\/" };
+        /* ]]> */
+</script>
+    <script type='text/javascript' src='/assets/wp-includes/js/mediaelement/mediaelement-and-player.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/prettyPhoto/jquery.prettyPhoto.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/themes/towerpress/assets/js/scripts.js'></script>
+    <script type='text/javascript' src='/assets/wp-includes/js/wp-embed.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/lib/vc_carousel/js/transition.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/lib/vc_carousel/js/vc_carousel.min.js'></script>
+
+    <script type='text/javascript' src='/Scripts/script.js'></script>
+
+    <!--Alert-->
+    <link href="/Admin/Style/jquery.alerts.css" rel="stylesheet" />
+    <script src="/Admin/JavaScript/jquery.alerts.js"></script>
+
+    <!--magnific-popup--->
+    <link rel="stylesheet" id="archi-magnific-popup-css" href="/assets/wp-content/plugins/magnific-popup.css?ver=4.6.1" type="text/css" media="all">
+    <script type="text/javascript" src="/assets/wp-content/plugins/jquery.magnific-popup.min.js?ver=4.6.1"></script>
+
+</body>
+</html>
+
+
+

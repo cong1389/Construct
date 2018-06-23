@@ -1,0 +1,173 @@
+﻿
+Dear {1}, <br />
+
+We are pleasure to inform that your request was sent successful. Upon receiving your request, we will reply immediately. Thank you!<br />
+
+If you have any questions, please do not hesitate to contact us at {26} or Hotline: {27}.<br />
+
+Thank you for your interest in {0}.<br />
+Yours sincerely,<br />
+{0}
+<br />
+
+
+<div style="padding: 10px; margin: 15px 10px 15px 10px; border: 1px solid #94868a; border-radius: 5px; line-height: 1.6em" class="m_1957876318790097403post">
+    <table style="width: 100%" class="m_1957876318790097403post-details">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <h1 style="margin: 0; padding: 3px 0 10px 0; font-size: 20px; color: #555; font-family: Georgia,Times,Serif; border-bottom: double #94868a 3pt"
+                        class="m_1957876318790097403post-title">{0}</h1>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="m_1957876318790097403content" width="100%" style="border-radius: 5px; border: 1px solid #fff; background: #fff; margin: 5px 0">
+        <tbody>
+            <tr>
+                <td>
+                    <table width="100%" style="padding: 10px">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><strong><u>Contact Information</u>:</strong></p>
+                                    <table style="padding: 10px">
+                                        <tbody>
+                                            <tr>                                                
+                                                <td valign="top">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Full name:</td>
+                                                                <td>{1}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>E-mail:</td>
+                                                                <td><a href="{2}" target="_blank">{2}</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td nowrap="">Alternate e-mail:</td>
+                                                                <td><a href="{2}" target="_blank">{2}</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td nowrap="">Phone number:</td>
+                                                                <td>{3}</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong><u>Itinerary Information</u>:</strong></p>
+                                    <table style="padding-left: 10px; color: #222">
+                                        <tbody>
+                                            <tr>
+                                                <td>Request Tour :</td>
+                                                <td><a href="#" target="_blank"
+                                                    data-saferedirecturl="#"><strong style="text-decoration: underline">{4}</strong></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Expected departure date :</td>
+                                                <td>{5}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Number of adults :</td>
+                                                <td>{6}</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td>Children in my group :</td>
+                                                <td>{7}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hotel rating :</td>
+                                                <td>{8}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Room type :</td>
+                                                <td>{9}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Others room :</td>
+                                                <td>{10}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bed type :</td>
+                                                <td>{11}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Others bed :</td>
+                                                <td>{12}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Arrival port :</td>
+                                                <td>{13}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Visa service :</td>
+                                                <td>{14}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Your preferred payment method :</td>
+                                                <td>{15}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Distance (km) Biking per day :</td>
+                                                <td>{16}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flight Arrival No :</td>
+                                                <td>{17}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flight Arrival Time :</td>
+                                                <td>{18}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flight Arrival Date :</td>
+                                                <td>{19}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flight Departure Time :</td>
+                                                <td>{20}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flight Departure Date :</td>
+                                                <td>{21}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Customer’s Height (List All) :</td>
+                                                <td>{22}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Customer’s Age  :</td>
+                                                <td>{23}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hotel’s Name  :</td>
+                                                <td>{24}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hotel’s Address  :</td>
+                                                <td>{25}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                   
+                                    <p><strong><u>Additional Information</u>:</strong></p>
+                                    <div style="color: #222; margin-top: 2px">
+                                        <strong>Preferred payment method:</strong> Credit card           
+                                    </div>
+                                    <div style="color: #222; margin-top: 2px">
+                                        <strong>You know us through:</strong> Just Cruising           
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
